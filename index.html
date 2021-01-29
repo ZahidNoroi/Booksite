@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Zahid Noroi Testing</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  
+</head>
+<body>
+    <div class="sideMenus">
+        <div class="closeButton">
+            <img src="images/close-button.png" width="40">
+        </div>
+        <ul>
+            <li><a class="active" href="#">ARTWORKS</a>  <span>COMING SOON</span></li>
+            <li><a href="#">PLAYLIST</a>  <span>COMING SOON</span></li>
+            <li><a href="#">GAMES</a><span>COMING SOON</span></li>
+        </ul>
+    </div>
+    <header>
+       <div class="menu">
+          <div class="shopIconDiv">
+           <a href="javascript:void(0);"> <img src="images/MENU_Rounded.png" width="30" class="iconShop"> </a>
+          </div>
+          <div class="shopTextDiv">
+            <!-- <a href="javascript:void(0);"> SHOP </a> -->
+          </div>
+       </div>
+        <div class="middleLogo">
+             <p>Zahid iqbal</p>
+        </div>
+        <div class="cartItems">
+            <!-- <p>CART  <a href="#">0</a> </p> -->
+        </div>
+    </header>
+   
+    <div class="rotatedLogoParent">
+        <div class="verticalLogo">
+            <!-- <img src="images/NEVER-GO-CREAM.png" width="15"> -->
+        </div>
+       <div class="rotatedLogo">
+        <img src="images/circl text.png" width="250" class="animationImg">
+       </div>
+       <div class="testing">
+
+       </div>
+    </div>
+    <div class="accesoriesDiv">
+        <h3>
+          <strong> raison d'être.</strong>
+        </h3>
+    </div>
+    <div class="goodHealthDiv">
+        <p>
+            How could i not appreciate what gives me light when I'm in darkness.
+            
+        </p>
+        <p class="january">First Drop January 2021</p>
+    </div>
+    <div class="inputDiv">
+        <form>
+            <input type="email" placeholder="YOUR EMAIL">
+            <input type="submit" value="JOIN US">
+        </form>
+    </div>
+    <div class="trademark">
+        <div class="trademarkLogo">
+            <img src="images/Brandmark_cream.png" width="80">
+        </div>
+        <div class="trademarkText">
+            <p>ZAHID NOROI</p>
+        </div>
+    </div>
+    <div class="iconsDiv">
+        <div class="icons">
+           <a href="mailto:info@zahidnoroi.com"><img src="images/IICON_ENVALOPE.png" width="60" ></a>  
+          <a href="https://www.instagram.com/zahid.sage/" target="_blank">  <img src="images/ICON_INSTA.png" width="60" >
+          </a>
+        </div>
+    </div>
+   
+    <div class="policyLinks">
+        <a href="terms.html">Terms & Conditions</a> | 
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="cookies.html">Cookie Policy</a> 
+    </div>
+   
+
+    <script>
+        window.onscroll = function(){
+           let position = window.pageYOffset;
+          if(position>80){
+              document.querySelector(".middleLogo").style.opacity = "0";
+          }
+          if(position<80){
+            document.querySelector(".middleLogo").style.opacity = "1";
+          }
+        }
+        var sideMenus = document.querySelector(".sideMenus");
+        var sideMenuButton = document.querySelector(".shopIconDiv");
+        var closeButton = document.querySelector(".closeButton");
+            sideMenuButton.addEventListener("click", function(){
+                sideMenus.style.left = "0px";
+            });
+            closeButton.addEventListener("click", function(){
+                sideMenus.style.left = "-1500px";
+            })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
